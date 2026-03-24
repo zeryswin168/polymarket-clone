@@ -126,7 +126,31 @@ Open http://localhost:5173 in your browser.
 
 ---
 
-## 🌟 Full Version
+## 🌍 Prediction Market Landscape
+
+This project is inspired by the leading prediction market platforms:
+
+| Platform | Chain | Model | Status |
+|----------|-------|-------|--------|
+| [Polymarket](https://polymarket.com) | Polygon | CLOB + Gnosis CTF | 🟢 #1 by volume, $1B+ monthly |
+| [Kalshi](https://kalshi.com) | Off-chain | CFTC-regulated exchange | 🟢 US-regulated, real-money |
+| [Azuro](https://azuro.org) | Polygon, Gnosis | Liquidity pool + AMM | 🟢 DeFi-native, permissionless |
+| [Overtime Markets](https://overtimemarkets.xyz) | Optimism, Arbitrum | Thales AMM | 🟢 Sports-focused |
+| [Augur](https://augur.net) | Ethereum | Fully decentralized | 🔴 Inactive (pioneer, launched 2018) |
+| [Gnosis / Omen](https://omen.eth.limo) | Gnosis Chain | CTF + AMM | 🟡 Low activity |
+| [Hedgehog](https://hedgehog.markets) | Solana | Parimutuel pools | 🟡 Solana ecosystem |
+| [PlotX](https://plotx.io) | Polygon | AMM-based | 🔴 Discontinued |
+| **This Project** | **Polygon** | **CLOB + Smart Contract Escrow** | **🟢 Open Source** |
+
+### Why build your own?
+
+- **Polymarket** is closed-source and US-restricted — you can't customize or deploy it
+- **Kalshi** requires CFTC license — not accessible for most teams
+- **Augur/Omen** are fully on-chain — slow and expensive for real users
+- **This project** gives you a production-ready, customizable platform you own and control
+
+---
+
 
 The complete production-ready platform includes:
 
