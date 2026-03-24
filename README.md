@@ -158,3 +158,21 @@ If you find this useful, please give it a ⭐ — it helps others discover this 
 ---
 
 *Built with ❤️ for the prediction market community*
+
+---
+
+## 🇨🇳 中文说明
+
+**Polymarket 开源克隆版** — 基于 Polygon 链的预测市场平台。
+
+- 链上 USDT 智能合约托管，资金透明安全
+- 自动结算，赢家直接收到 USDT
+- UUPS 可升级合约，支持热更新
+- 限价订单撮合引擎，实时成交
+- 移动端 H5 + Android APK
+- Java 后端 + Vue 3 前端 + Solidity 合约
+- 支持多语言（中文/英文/日文等10+语种）
+
+**关键词**: 预测市场, Polymarket 克隆, 区块链博彩, 去中心化, 智能合约, 链上投注, Web3 预测, 加密货币, USDT 托管, Polygon, DeFi, 开源预测平台, 二元期权, 事件预测
+
+**完整版请联系我们获取**，包含后端源码、管理后台、合约部署脚本、技术支持。
