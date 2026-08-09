@@ -1,3 +1,6 @@
+
+</think>
+
 # 🔮 Polymarket Clone — Open Source Prediction Market Platform (Polygon + Vue 3 + Solidity)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -48,6 +51,9 @@ npm install
 
 # Start development server
 npm run dev
+
+# Preview production build locally
+npm run preview
 
 # Build for production
 npm run build
