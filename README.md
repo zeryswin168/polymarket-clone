@@ -1,4 +1,4 @@
-# 🔮 Polymarket Clone — Open Source Prediction Market Platform (Polygon + Vue 3 + Solidity)
+# 🔮 Feature-rich prediction Clone — prediction market platform-prediction market software-Polymarket clone development
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D.svg)](https://vuejs.org/)
