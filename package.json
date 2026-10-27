@@ -16,5 +16,21 @@
     "@vitejs/plugin-vue": "^4.3.4",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.4.9"
+  },
+  "description": "Polymarket-style prediction market frontend demo and custom development showcase",
+  "keywords": [
+    "polymarket",
+    "polymarket-clone",
+    "prediction-market",
+    "prediction-market-development",
+    "prediction-market-software",
+    "white-label-prediction-market",
+    "event-trading",
+    "outcome-trading"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeryswin168/polymarket-clone.git"
   }
 }

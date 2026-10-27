@@ -1,4 +1,16 @@
-node_modules
-dist
-.DS_Store
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local environment and machine-specific files
+.env
+.env.*
+!.env.example
 *.local
+.DS_Store
+Thumbs.db
+
+# Development logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

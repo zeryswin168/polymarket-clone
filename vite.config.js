@@ -8,5 +8,7 @@ export default defineConfig({
     vue(),
     Components({ resolvers: [VantResolver()] })
   ],
+  // Keep the demo preview port predictable when reviewing a production build.
+  preview: { port: 4173, strictPort: true },
   server: { port: 5173, host: true }
 })
