@@ -1,5 +1,5 @@
 <template>
-  <div class="app-shell">
+  <div class="app-shell"> 
     <router-view />
     <div class="tab-bar" v-if="showTabbar">
       <div class="tab-item" :class="{ active: route.path === '/' }" @click="router.push('/')">
