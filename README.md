@@ -56,12 +56,14 @@ Build the frontend:
 npm run build
 ```
 
-### Screenshots
+### Prediction Market UI Screenshots
+
+KnowMeMarket reference screenshots showing market discovery, a YES/NO market detail page, and related markets and comments.
 
 <p align="center">
-  <img src="screenshots/home.png" width="300" alt="Prediction market demo — event browsing and outcome trading interface" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="screenshots/portfolio.png" width="300" alt="Prediction market demo — portfolio and sample positions" />
+  <img src="screenshots/knowmemarket-home.png" width="225" alt="KnowMeMarket home with prediction market search and categories" />
+  <img src="screenshots/knowmemarket-market-detail.png" width="225" alt="KnowMeMarket market detail with YES and NO outcomes" />
+  <img src="screenshots/knowmemarket-activity.png" width="225" alt="KnowMeMarket related markets and comments" />
 </p>
 
 ### Frequently Asked Questions
@@ -91,6 +93,7 @@ For prediction market development, white-label solutions, source-code delivery, 
 - **Platform development:** Polymarket clone development, prediction market platform development, custom prediction market software, and event contract trading platforms.
 - **Source code and customization:** Polymarket clone script, prediction market source code, white-label prediction market solutions, and market platform setup.
 - **Frontend demo:** Web3 prediction market UI, event market browsing, YES/NO outcome trading interfaces, and portfolio views.
+- **Platform references:** Kalshi, Polymarket, and OmenX are comparison points for prediction market development. These were the top three platforms by seven-day prediction volume in the [DefiLlama rankings](https://defillama.com/protocols/prediction-market) on November 18, 2026.
 
 ### License
 
@@ -150,9 +153,13 @@ npm run build
 
 ### 页面截图
 
-| 预测市场首页 | 个人资产页面 |
-| --- | --- |
-| ![预测市场首页：事件浏览与结果交易界面](screenshots/home.png) | ![个人资产页：示例持仓与资产展示](screenshots/portfolio.png) |
+KnowMeMarket 界面参考，展示市场浏览、YES/NO 市场详情、相关市场与评论。
+
+<p align="center">
+  <img src="screenshots/knowmemarket-home.png" width="225" alt="KnowMeMarket 预测市场首页与搜索分类" />
+  <img src="screenshots/knowmemarket-market-detail.png" width="225" alt="KnowMeMarket YES/NO 预测市场详情" />
+  <img src="screenshots/knowmemarket-activity.png" width="225" alt="KnowMeMarket 相关市场与评论" />
+</p>
 
 ### 常见问题
 
@@ -183,6 +190,7 @@ npm run build
 - **平台开发：** Polymarket 开发、Polymarket 仿站、预测市场平台开发、预测市场系统搭建、预测交易平台开发、事件合约交易平台开发。
 - **源码与定制：** Polymarket 克隆源码、预测市场系统源码、预测市场白标方案、预测市场定制开发。
 - **前端演示：** Web3 预测市场前端、预测事件浏览、YES/NO 结果交易界面、持仓与资产页面。
+- **平台参考：** Kalshi、Polymarket、OmenX 可作为预测市场开发的对照案例。按 2026 年 11 月 18 日的 [DefiLlama 排名](https://defillama.com/protocols/prediction-market)，这三家在该榜单的近七天预测市场成交量中位列前三。
 
 ### 开源协议
 
