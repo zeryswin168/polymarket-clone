@@ -88,7 +88,9 @@ For prediction market development, white-label solutions, source-code delivery, 
 
 ### Related Topics
 
-Polymarket clone · prediction market development · prediction market platform · prediction market software · Polymarket clone script · white-label prediction market · prediction market source code · event trading · outcome trading
+- **Platform development:** Polymarket clone development, prediction market platform development, custom prediction market software, and event contract trading platforms.
+- **Source code and customization:** Polymarket clone script, prediction market source code, white-label prediction market solutions, and market platform setup.
+- **Frontend demo:** Web3 prediction market UI, event market browsing, YES/NO outcome trading interfaces, and portfolio views.
 
 ### License
 
@@ -178,7 +180,9 @@ npm run build
 
 ### 相关关键词
 
-Polymarket 开发、Polymarket 仿站、Polymarket 克隆源码、预测市场开发、预测市场平台、预测市场系统搭建、预测市场源码、预测交易平台开发、事件合约交易平台、预测市场白标方案、预测市场定制开发。
+- **平台开发：** Polymarket 开发、Polymarket 仿站、预测市场平台开发、预测市场系统搭建、预测交易平台开发、事件合约交易平台开发。
+- **源码与定制：** Polymarket 克隆源码、预测市场系统源码、预测市场白标方案、预测市场定制开发。
+- **前端演示：** Web3 预测市场前端、预测事件浏览、YES/NO 结果交易界面、持仓与资产页面。
 
 ### 开源协议
 
