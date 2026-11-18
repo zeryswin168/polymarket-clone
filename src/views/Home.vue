@@ -20,9 +20,13 @@
     </div>
 
     <div class="search-bar">
-      <div class="search-input" @click="showContact">
+      <div class="search-input">
         <van-icon name="search" size="16" color="#9ca3af" />
-        <span class="search-placeholder">Search markets...</span>
+        <input v-model="searchQuery" type="search" aria-label="Search demo markets"
+          placeholder="Search markets..." autocomplete="off" />
+        <button v-if="searchQuery" class="clear-search" type="button" @click="searchQuery = ''">
+          Clear
+        </button>
       </div>
     </div>
 
@@ -32,6 +36,13 @@
     </div>
 
     <div class="event-list">
+      <p v-if="searchQuery.trim()" class="search-summary" role="status">
+        {{ filteredEvents.length }} {{ filteredEvents.length === 1 ? 'market' : 'markets' }} found
+      </p>
+      <div v-if="!filteredEvents.length" class="empty-results">
+        <p>No markets match your search or filters.</p>
+        <button type="button" @click="resetFilters">Reset filters</button>
+      </div>
       <div v-for="ev in filteredEvents" :key="ev.id" class="event-card" @click="$router.push(`/detail/${ev.id}`)">
         <div class="event-head">
           <div class="event-img">{{ ev.image }}</div>
@@ -73,10 +84,12 @@
 import { ref, computed } from 'vue'
 import { showDialog } from 'vant'
 import { mockEvents, CONTACT_MSG } from '../data'
+import { matchesMarketSearch } from '../market-search'
 
 const activeCat = ref('All')
 const activeTag = ref('All')
-const categories = ['All', '🔥 Hot', 'Crypto', 'Politics', 'Sports', 'Tech', 'Science']
+const searchQuery = ref('')
+const categories = ['All', '🔥 Hot', 'Crypto', 'Politics', 'Sports', 'Tech', 'Science', 'Economy']
 const hotTags = ['All', 'Bitcoin', 'Trump', 'AI', 'ETH', 'FIFA', 'Mars']
 
 const showContact = () => showDialog({ title: 'Get Full Version', message: CONTACT_MSG, confirmButtonText: 'OK', confirmButtonColor: '#0066FF' })
@@ -89,8 +102,14 @@ const filteredEvents = computed(() => {
   if (activeTag.value !== 'All') {
     list = list.filter(e => e.title.toLowerCase().includes(activeTag.value.toLowerCase()))
   }
-  return list
+  return list.filter(event => matchesMarketSearch(event, searchQuery.value))
 })
+
+const resetFilters = () => {
+  searchQuery.value = ''
+  activeCat.value = 'All'
+  activeTag.value = 'All'
+}
 
 const pct = (p) => Math.round(p * 100) + '%'
 const cent = (p) => (p * 100).toFixed(1) + '¢'
@@ -132,9 +151,25 @@ const fmtVol = (v) => {
 .search-bar { display: flex; align-items: center; padding: 4px 16px 8px; gap: 12px; }
 .search-input {
   flex: 1; display: flex; align-items: center; gap: 8px;
-  background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 8px 12px; cursor: pointer;
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 8px 12px;
 }
-.search-placeholder { color: #9ca3af; font-size: 14px; }
+.search-input:focus-within { border-color: #0066ff; box-shadow: 0 0 0 2px #bfdbfe; }
+.search-input input {
+  flex: 1; min-width: 0; border: 0; outline: 0;
+  background: transparent; color: #111827; font: inherit; font-size: 14px;
+}
+.search-input input::placeholder { color: #6b7280; }
+.search-input input::-webkit-search-cancel-button { display: none; }
+.clear-search, .empty-results button {
+  border: 0; background: transparent; color: #0055d4;
+  font: inherit; font-size: 13px; font-weight: 600; cursor: pointer;
+}
+.search-summary { padding: 0 4px 8px; font-size: 13px; color: #4b5563; }
+.empty-results {
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 14px;
+  padding: 24px 16px; text-align: center; color: #4b5563; font-size: 14px;
+}
+.empty-results button { padding: 8px; margin-top: 8px; }
 .tags-scroll {
   display: flex; overflow-x: auto; padding: 0 16px 10px; gap: 8px;
   -webkit-overflow-scrolling: touch;
